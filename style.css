@@ -34,6 +34,13 @@ form {
     text-align: center;
 }
 
+h1 {
+    font-size: 3rem;
+    color: #ffffff;
+    text-align: center;
+    margin: 20px;
+}
+
 h3 {
     color: #F23568;
 }
@@ -64,6 +71,16 @@ hr {
     margin: 20px auto;
 }
 
-#final-value {
+#details {
     color: #ffffff;
+    font-size: .8rem;
+}
+
+#final-value {
+    color: #232B59;
+    background-color: #F23568;
+    padding: 10px;
+    width: 50%;
+    text-align: center;
+    display: none;
 }
