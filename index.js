@@ -2,6 +2,7 @@ const dollar = document.querySelector('#original-price')
 const form = document.querySelector('#form')
 const finalValue = document.querySelector('#final-value')
 const details = document.querySelector('#details')
+const title = document.querySelector('.title')
 
 form.addEventListener("submit", event => {
     event.preventDefault();
@@ -13,7 +14,8 @@ form.addEventListener("submit", event => {
             const valorEmReal = dollar.value * taxaDoDia
             const valorIof = 0.06 * valorEmReal
             
-            finalValue.style.display = 'block'
+            finalValue.style.display = 'block';
+            title.style.display = 'block';
             finalValue.textContent = `R$ ${(valorEmReal + valorIof).toFixed(2)}`
             details.textContent = `(Compra: R$ ${valorEmReal.toFixed(2)} | IOF: R$ ${valorIof.toFixed(2)})`
         })

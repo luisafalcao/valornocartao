@@ -84,3 +84,7 @@ hr {
     text-align: center;
     display: none;
 }
+
+.title {
+    display: none;
+}
