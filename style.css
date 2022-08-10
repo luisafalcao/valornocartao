@@ -45,7 +45,8 @@ h3 {
     color: #F23568;
 }
 
-form input {
+form input,
+form select {
     margin: 10px;
     padding: 10px;
     text-align: center;
@@ -87,4 +88,30 @@ hr {
 
 .title {
     display: none;
+}
+
+#info-icon {
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#info-icon:hover {
+    color: #8C2E62;
+}
+
+#info {
+    border: 1px solid #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    color: #ffffff;
+    visibility: hidden;
+    font-size: .8rem;
+}
+
+#info.show {
+    visibility: visible;
+}
+
+a {
+    color: whitesmoke
 }
